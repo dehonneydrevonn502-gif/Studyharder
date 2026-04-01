@@ -84,7 +84,12 @@
     </nav>
     <div class="container">
         <div class="sidebar">
-            <h3>Fun Games</h3>
+            <h3>Fun Games (original)</h3>
+            <button onclick="loadGame('custom-memory')">Memory Match</button>
+            <button onclick="loadGame('custom-math')">Math Racer</button>
+            <button onclick="loadGame('custom-word')">Word Puzzle</button>
+            <hr>
+            <h3>Classic Games</h3>
             <button onclick="loadGame('snake')">Snake</button>
             <button onclick="loadGame('tetris')">Tetris</button>
             <button onclick="loadGame('pacman')">Pac-Man</button>
@@ -114,6 +119,9 @@
     </div>
     <script>
         const games = {
+            'custom-memory': 'https://www.mathsisfun.com/games/memory.html',
+            'custom-math': 'https://www.coolmathgames.com/0-math-mayhem',
+            'custom-word': 'https://www.spellingcity.com/free-word-search-maker.html',
             snake: 'https://snake-game.js.org/',
             tetris: 'https://tetris-js.vercel.app/',
             pacman: 'https://pacman-js.vercel.app/',
