@@ -84,22 +84,18 @@
     </nav>
     <div class="container">
         <div class="sidebar">
-            <h3>Fun Games (original)</h3>
-            <button onclick="loadGame('custom-memory')">Memory Match</button>
-            <button onclick="loadGame('custom-math')">Math Racer</button>
-            <button onclick="loadGame('custom-word')">Word Puzzle</button>
+            <h3>Fun Games</h3>
+            <button onclick="loadGame('deltarune')">Deltarune</button>
+            <button onclick="loadGame('ovo')">Ovo</button>
+            <button onclick="loadGame('fridaynight')">Friday Night Funkin</button>
+            <button onclick="loadGame('krunker')">Krunker.io</button>
+            <button onclick="loadGame('surviv')">Surviv.io</button>
+            <button onclick="loadGame('zombs')">Zombs.io</button>
+            <button onclick="loadGame('littlebigsnake')">Little Big Snake</button>
+            <button onclick="loadGame('evowars')">EvoWars.io</button>
             <hr>
-            <h3>Classic Games</h3>
-            <button onclick="loadGame('snake')">Snake</button>
-            <button onclick="loadGame('tetris')">Tetris</button>
-            <button onclick="loadGame('pacman')">Pac-Man</button>
-            <button onclick="loadGame('2048')">2048</button>
+            <h3>Flappy Bird</h3>
             <button onclick="loadGame('flappybird')">Flappy Bird</button>
-            <button onclick="loadGame('asteroids')">Asteroids</button>
-            <button onclick="loadGame('pong')">Pong</button>
-            <button onclick="loadGame('breakout')">Breakout</button>
-            <button onclick="loadGame('minesweeper')">Minesweeper</button>
-            <button onclick="loadGame('tictactoe')">Tic Tac Toe</button>
             <hr>
             <h3>Owner Mode</h3>
             <input id="owner-password-input" type="password" placeholder="Enter owner password" style="width:100%; padding:8px; box-sizing:border-box; margin-bottom:8px;">
@@ -119,19 +115,15 @@
     </div>
     <script>
         const games = {
-            'custom-memory': 'https://www.mathsisfun.com/games/memory.html',
-            'custom-math': 'https://www.coolmathgames.com/0-math-mayhem',
-            'custom-word': 'https://www.spellingcity.com/free-word-search-maker.html',
-            snake: 'https://snake-game.js.org/',
-            tetris: 'https://tetris-js.vercel.app/',
-            pacman: 'https://pacman-js.vercel.app/',
-            '2048': 'https://2048game.com/',
-            flappybird: 'https://flappybird.io/',
-            asteroids: 'https://asteroids-js.vercel.app/',
-            pong: 'https://pong-js.vercel.app/',
-            breakout: 'https://breakout-js.vercel.app/',
-            minesweeper: 'https://minesweeper-js.vercel.app/',
-            tictactoe: 'https://tic-tac-toe-js.vercel.app/'
+            deltarune: 'https://deltarune.com/',
+            ovo: 'https://ovo.game/',
+            fridaynight: 'https://www.fridaynightfunkin.io/',
+            krunker: 'https://krunker.io/',
+            surviv: 'https://surviv.io/',
+            zombs: 'https://zombs.io/',
+            littlebigsnake: 'https://littlebigsnake.com/',
+            evowars: 'https://evowars.io/',
+            flappybird: 'https://flappybird.io/'
         };
 
         let currentGame = null;
